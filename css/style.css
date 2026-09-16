@@ -2222,6 +2222,11 @@ img {
     letter-spacing: 0.12em;
   }
 
+  /* Hide ticker bar on mobile — customers go straight to Best Sellers */
+  .announcement-bar {
+    display: none !important;
+  }
+
   .btn-whatsapp-header {
     display: none; /* Accessible via sticky bottom tab & floating widget */
   }
