@@ -81,8 +81,8 @@
       <!-- Desktop Nav Menu -->
       <nav aria-label="Main Navigation">
         <ul class="nav-menu">
-          <li><a href="#whatsNewSection" class="nav-link">What's New</a></li>
           <li><a href="#bestSellersSection" class="nav-link">Best Sellers</a></li>
+          <li><a href="#whatsNewSection" class="nav-link">What's New</a></li>
           <li><a href="#mainCatalogSection" class="nav-link">Collections</a></li>
           <li><a href="#locationSection" class="nav-link">Kilimani Boutique</a></li>
           <li><a href="#reviewsSection" class="nav-link">Reviews</a></li>
@@ -149,8 +149,8 @@
 
       <p class="mobile-nav-group-title" style="margin-top: 24px;">Quick Links</p>
       <ul class="mobile-nav-list">
-        <li><a href="#whatsNewSection" onclick="closeMobileNav();">🆕 What's New</a></li>
         <li><a href="#bestSellersSection" onclick="closeMobileNav();">🔥 Best Sellers</a></li>
+        <li><a href="#whatsNewSection" onclick="closeMobileNav();">🆕 What's New</a></li>
         <li><a href="#reviewsSection" onclick="closeMobileNav();">⭐ Customer Reviews</a></li>
         <li><a href="#locationSection" onclick="closeMobileNav();">📍 Our Kilimani Boutique</a></li>
         <li><a href="#faqSection" onclick="closeMobileNav();">❓ FAQs</a></li>
@@ -246,7 +246,41 @@
   </section>
 
   <!-- ========================================================================
-       4. What's New & Announcement Section (Special Offers, Drops, Announcements)
+       4. Best Sellers Section (Shopping-First — products before stories)
+       ======================================================================== -->
+  <section class="section-padding bestsellers-section" id="bestSellersSection">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-tag">⭐ Customer Favorites</span>
+          <h2 class="section-title">Best Sellers This Week</h2>
+          <p style="color: var(--text-secondary); font-size: 14px;">The most loved pieces in Nairobi — tried, tested, and rated 5 stars for fit and feel.</p>
+        </div>
+        <a href="#mainCatalogSection" class="btn-outline-gold" style="font-size: 12px; padding: 10px 20px;">
+          View All Products →
+        </a>
+      </div>
+
+      <!-- Best Sellers Grid -->
+      <div class="products-grid" id="bestSellersGrid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. Collections Sticky Navigation Bar (All 9 Collections)
+       ======================================================================== -->
+  <div class="collections-nav-section" id="collectionsNavSection">
+    <div class="container">
+      <div class="collection-pills-scroll" id="collectionPillsContainer">
+        <!-- Dynamically rendered pills: Bras, Shapewear, Panties, Body Suits, Bra Sets, Lingerie, Shaping Panties, Full Body Suits, Toys -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       6. What's New & Announcement Section (Special Offers, Drops, Announcements)
        ======================================================================== -->
   <section class="whats-new-section" id="whatsNewSection">
     <div class="container">
@@ -286,40 +320,6 @@
           </div>
           <button onclick="openModal('returnPolicyModal')" class="promo-cta-link" style="text-align: left;">Read 24-Hr Policy →</button>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       5. Collections Sticky Navigation Bar (All 9 Collections)
-       ======================================================================== -->
-  <div class="collections-nav-section" id="collectionsNavSection">
-    <div class="container">
-      <div class="collection-pills-scroll" id="collectionPillsContainer">
-        <!-- Dynamically rendered pills: Bras, Shapewear, Panties, Body Suits, Bra Sets, Lingerie, Shaping Panties, Full Body Suits, Toys -->
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================
-       6. Best Sellers Section
-       ======================================================================== -->
-  <section class="section-padding bestsellers-section" id="bestSellersSection">
-    <div class="container">
-      <div class="section-header-flex">
-        <div>
-          <span class="section-tag">⭐ Customer Favorites</span>
-          <h2 class="section-title">Best Sellers This Week</h2>
-          <p style="color: var(--text-secondary); font-size: 14px;">The most loved pieces in Nairobi — tried, tested, and rated 5 stars for fit and feel.</p>
-        </div>
-        <a href="#mainCatalogSection" class="btn-outline-gold" style="font-size: 12px; padding: 10px 20px;">
-          View All Products →
-        </a>
-      </div>
-
-      <!-- Best Sellers Grid -->
-      <div class="products-grid" id="bestSellersGrid">
-        <!-- Rendered via JS -->
       </div>
     </div>
   </section>
