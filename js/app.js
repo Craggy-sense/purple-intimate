@@ -305,6 +305,13 @@ function updateCartUI() {
     b.style.display = totalItems > 0 ? 'flex' : 'none';
   });
 
+  // Sync mobile bottom nav cart badge
+  const mobileCartBadge = document.getElementById('mobileBottomCartBadge');
+  if (mobileCartBadge) {
+    mobileCartBadge.textContent = totalItems;
+    mobileCartBadge.style.display = totalItems > 0 ? 'flex' : 'none';
+  }
+
   if (subtotalEl) subtotalEl.textContent = `KSh ${subtotal.toLocaleString()}`;
   if (totalEl) totalEl.textContent = `KSh ${subtotal.toLocaleString()}`;
 
@@ -456,6 +463,21 @@ function handleWhatsAppQuickPrompt(promptType) {
   window.open(url, '_blank');
 }
 
+// ==========================================================================
+// 6b. Mobile Navigation Drawer
+// ==========================================================================
+function openMobileNav() {
+  document.getElementById('mobileNavBackdrop')?.classList.add('open');
+  document.getElementById('mobileNavDrawer')?.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileNav() {
+  document.getElementById('mobileNavBackdrop')?.classList.remove('open');
+  document.getElementById('mobileNavDrawer')?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 function sendCustomChatMessage() {
   const input = document.getElementById('waChatCustomInput');
   if (!input || input.value.trim() === '') return;
@@ -490,6 +512,13 @@ function updateWishlistUI() {
   if (badge) {
     badge.textContent = state.wishlist.length;
     badge.style.display = state.wishlist.length > 0 ? 'flex' : 'none';
+  }
+
+  // Sync mobile bottom nav wishlist badge
+  const mobileBadge = document.getElementById('mobileBottomWishlistBadge');
+  if (mobileBadge) {
+    mobileBadge.textContent = state.wishlist.length;
+    mobileBadge.style.display = state.wishlist.length > 0 ? 'flex' : 'none';
   }
 }
 
@@ -816,8 +845,14 @@ function initEventListeners() {
     if (e.key === 'Escape') {
       closeCartDrawer();
       closeWhatsAppChatbot();
+      closeMobileNav();
       document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
       document.body.style.overflow = '';
     }
   });
+
+  // Mobile hamburger menu toggle
+  document.getElementById('mobileMenuToggle')?.addEventListener('click', openMobileNav);
+  document.getElementById('mobileNavClose')?.addEventListener('click', closeMobileNav);
+  document.getElementById('mobileNavBackdrop')?.addEventListener('click', closeMobileNav);
 }
