@@ -2222,11 +2222,6 @@ img {
     letter-spacing: 0.12em;
   }
 
-  /* Hide ticker bar on mobile — customers go straight to Best Sellers */
-  .announcement-bar {
-    display: none !important;
-  }
-
   .btn-whatsapp-header {
     display: none; /* Accessible via sticky bottom tab & floating widget */
   }
@@ -2246,7 +2241,12 @@ img {
     flex: 1;
   }
 
-  /* Hero Mobile Layout */
+  /* Hide hero section entirely on mobile — go straight to Best Sellers */
+  .hero-section {
+    display: none !important;
+  }
+
+  /* Hero Mobile Layout - kept for reference but section is hidden */
   .hero-section {
     min-height: auto;
     padding: 30px 0 40px;
