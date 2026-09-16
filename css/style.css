@@ -2206,6 +2206,33 @@ img {
     display: none; /* Accessible via sticky bottom tab & floating widget */
   }
 
+  /* Hide info sub-bar on mobile — info is in the drawer & footer */
+  .info-sub-bar {
+    display: none !important;
+  }
+
+  /* Hide header action buttons on mobile — they live in the bottom nav bar */
+  .header-actions {
+    display: none !important;
+  }
+
+  /* Compact announcement bar on mobile */
+  .announcement-content {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 16px;
+  }
+
+  .announcement-item {
+    font-size: 11px;
+    justify-content: center;
+  }
+
+  /* Push brand-logo to fill the space between hamburger and edge */
+  .brand-logo {
+    flex: 1;
+  }
+
   /* Hero Mobile Layout */
   .hero-section {
     min-height: auto;
