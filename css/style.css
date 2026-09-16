@@ -2226,6 +2226,26 @@ img {
     display: none; /* Accessible via sticky bottom tab & floating widget */
   }
 
+  /* Top Announcement Ticker Bar — explicitly visible on mobile */
+  .announcement-bar {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: 36px !important;
+    position: relative !important;
+    z-index: 50 !important;
+  }
+
+  .ticker-wrap {
+    display: flex !important;
+    height: 36px !important;
+    overflow: hidden !important;
+  }
+
+  .ticker-track {
+    display: flex !important;
+  }
+
   /* Hide info sub-bar on mobile — info is in the drawer & footer */
   .info-sub-bar {
     display: none !important;
