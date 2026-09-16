@@ -416,6 +416,72 @@ const PRODUCTS_DATA = [
       "Sensual jasmine and amber aromatics",
       "Leaves skin silky smooth without greasy residue"
     ]
+  },
+  {
+    id: "pi-19",
+    name: "The Iconic Rose Clitoral Suction Vibrator",
+    category: "toys",
+    categoryName: "Toys & Novelties",
+    price: 3800,
+    originalPrice: 4800,
+    rating: 5.0,
+    reviewsCount: 184,
+    image: "assets/images/toy_rose.jpg",
+    badge: "#1 Trending",
+    bestSeller: true,
+    isNew: true,
+    sizes: ["USB Rechargeable"],
+    description: "The viral luxury clitoral suction rose. Engineered with contactless air-wave pulsation technology that mimics oral pleasure with 10 frequency settings. 100% waterproof, whisper-quiet, and discreetly packaged.",
+    features: [
+      "Contactless air-pulse suction technology",
+      "Silky petal-soft medical grade silicone",
+      "10 whisper-quiet suction frequency modes",
+      "IPX7 100% waterproof & magnetic USB quick charge"
+    ]
+  },
+  {
+    id: "pi-20",
+    name: "Aura Velvet & Leatherette Intimate Body Harness",
+    category: "toys",
+    categoryName: "Toys & Novelties",
+    price: 5500,
+    originalPrice: 6800,
+    rating: 4.9,
+    reviewsCount: 52,
+    image: "assets/images/toy_harness.jpg",
+    badge: "Luxury Kit",
+    bestSeller: false,
+    isNew: true,
+    sizes: ["Fully Adjustable (XS - 3XL)"],
+    description: "Opulent royal purple velvet and supple vegan leather body harness with polished rose gold O-rings and buckle hardware. Fully adjustable straps with matching thong brief for seductive boudoir play.",
+    features: [
+      "Multi-point adjustable straps for custom contour fit",
+      "Plush velvet exterior with skin-soft inner lining",
+      "Polished rose gold metal O-rings and buckles",
+      "Includes matching velvet strap brief"
+    ]
+  },
+  {
+    id: "pi-21",
+    name: "Empress Dual-Stimulation Rabbit Vibrator",
+    category: "toys",
+    categoryName: "Toys & Novelties",
+    price: 4600,
+    originalPrice: 5800,
+    rating: 5.0,
+    reviewsCount: 78,
+    image: "assets/images/toy_rabbit.jpg",
+    badge: "Dual Action",
+    bestSeller: true,
+    isNew: false,
+    sizes: ["USB Fast Rechargeable"],
+    description: "Ergonomic dual-action rabbit vibrator targeting both the G-spot and clitoris simultaneously. Features dual whisper-quiet motors with 12 synchronized vibration patterns and rose gold metallic base.",
+    features: [
+      "Simultaneous internal G-spot & external clitoral stimulation",
+      "Dual high-torque whisper-quiet independent motors",
+      "12 rhythmic vibration & pulsation modes",
+      "IPX7 waterproof with travel lock safety"
+    ]
   }
 ];
 
